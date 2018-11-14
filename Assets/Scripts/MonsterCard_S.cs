@@ -10,9 +10,10 @@ public class MonsterCard_S : MonoBehaviour {
     public int health;
     public int armor;
     public int goldReturn;
+    public bool isMonster;
 	// Use this for initialization
 	void Start () {
-		
+        Debug.Log("Monster Card Script On!");
 	}
 	
 	// Update is called once per frame
