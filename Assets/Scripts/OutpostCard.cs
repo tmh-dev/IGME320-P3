@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class OutpostCard : MonoBehaviour {
-
+    // Almost completely sure this is useless. Don't want to delete yet.
     public bool isMonster;
 	// Use this for initialization
 	void Start () {

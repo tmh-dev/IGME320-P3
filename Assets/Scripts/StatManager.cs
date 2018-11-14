@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 
 public class StatManager : MonoBehaviour {
-
+    // Player Stat Manager
     public int strength;
     public int health;
     public int armor;
@@ -15,7 +15,7 @@ public class StatManager : MonoBehaviour {
     public Text health_T;
     public Text armor_T;
     public Text strength_T;
-    public List<GameObject> equipment = new List<GameObject>();
+    
 	// Use this for initialization
 	void Start () {
         // Set initial values

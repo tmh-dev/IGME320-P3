@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DiscoverCard : MonoBehaviour {
-
+    // Again pretty sure this is completely useless. Can probably delete.
     public bool isMonster;
 	// Use this for initialization
 	void Start () {
