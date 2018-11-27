@@ -6,6 +6,7 @@ public class StatHandler : MonoBehaviour {
     public int strength;
     public int armor;
     public int health;
+    public int credits;
 
     public void TakeDamage(int amount)
     {

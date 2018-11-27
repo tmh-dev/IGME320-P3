@@ -10,6 +10,7 @@ public class StatManager : MonoBehaviour {
     public Text strengthText;
     public Text armorText;
     public Text healthText;
+    public Text creditText;
 
 	// Use this for initialization
 	void Start () {
@@ -22,5 +23,6 @@ public class StatManager : MonoBehaviour {
         strengthText.GetComponent<Text>().text = stats.strength.ToString();
         armorText.GetComponent<Text>().text = stats.armor.ToString();
         healthText.GetComponent<Text>().text = stats.health.ToString();
+        creditText.GetComponent<Text>().text = stats.credits.ToString();
     }
 }
