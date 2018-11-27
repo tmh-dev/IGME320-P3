@@ -21,4 +21,9 @@ public class StatHandler : MonoBehaviour {
             armor -= amount;
         
     }
+
+    public void HealToFull()
+    {
+        if (health < 5) health = 5;
+    }
 }

@@ -18,6 +18,7 @@ public class StatManager : MonoBehaviour {
 	
 	// Keep stats updated with any changes
 	void Update () {
+        stats = player.GetComponent<StatHandler>();
         strengthText.GetComponent<Text>().text = stats.strength.ToString();
         armorText.GetComponent<Text>().text = stats.armor.ToString();
         healthText.GetComponent<Text>().text = stats.health.ToString();
