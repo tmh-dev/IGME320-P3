@@ -23,6 +23,6 @@ public class StatManager : MonoBehaviour {
         strengthText.GetComponent<Text>().text = stats.strength.ToString();
         armorText.GetComponent<Text>().text = stats.armor.ToString();
         healthText.GetComponent<Text>().text = stats.health.ToString();
-        creditText.GetComponent<Text>().text = stats.credits.ToString();
+        if (stats.isActive) creditText.GetComponent<Text>().text = stats.credits.ToString();
     }
 }

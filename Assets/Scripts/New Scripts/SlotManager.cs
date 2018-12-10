@@ -23,7 +23,7 @@ public class SlotManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.N))
         {
             activePlayerID++;
             topPlayerID++;
@@ -44,16 +44,20 @@ public class SlotManager : MonoBehaviour {
             slots[0].GetComponent<StatManager>().player = players[activePlayerID];
             slots[0].GetComponent<StatChanger>().switched = true;
             titleSlots[0].GetComponent<Text>().text = "Player " + (activePlayerID + 1);
+            players[activePlayerID].GetComponent<StatHandler>().isActive = true;
             //top slot
             slots[1].GetComponent<StatManager>().player = players[topPlayerID];
             titleSlots[1].GetComponent<Text>().text = "P" + (topPlayerID + 1);
+            players[topPlayerID].GetComponent<StatHandler>().isActive = false;
 
             //middle slot
             slots[2].GetComponent<StatManager>().player = players[middlePlayerID];
             titleSlots[2].GetComponent<Text>().text = "P" + (middlePlayerID + 1);
+            players[middlePlayerID].GetComponent<StatHandler>().isActive = false;
             //bottom slot
             slots[3].GetComponent<StatManager>().player = players[bottomPlayerID];
             titleSlots[3].GetComponent<Text>().text = "P" + (bottomPlayerID + 1);
+            players[bottomPlayerID].GetComponent<StatHandler>().isActive = false;
         }
 	}
 }

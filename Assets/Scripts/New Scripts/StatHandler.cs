@@ -7,6 +7,12 @@ public class StatHandler : MonoBehaviour {
     public int armor;
     public int health;
     public int credits;
+    public bool isActive;
+
+    private void Awake()
+    {
+        isActive = false;
+    }
 
     public void TakeDamage(int amount)
     {
