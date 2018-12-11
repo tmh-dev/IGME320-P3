@@ -8,6 +8,7 @@ public class StatChanger : MonoBehaviour {
     public GameObject strengthImage;
     public GameObject armorImage;
     public GameObject healthImage;
+    public GameObject creditImage;
     private StatHandler stats;
 
     public Button strPlusButtonPrefab;
@@ -19,6 +20,9 @@ public class StatChanger : MonoBehaviour {
     public Button healthPlusButtonPrefab;
     public Button healthMinusButtonPrefab;
 
+    public Button creditPlusButtonPrefab;
+    public Button creditMinusButtonPrefab;
+
     private Button strPlusButton;
     private Button strMinusButton;
 
@@ -27,6 +31,9 @@ public class StatChanger : MonoBehaviour {
 
     private Button healthPlusButton;
     private Button healthMinusButton;
+
+    private Button creditPlusButton;
+    private Button creditMinusButton;
 
     public bool switched;
 
@@ -67,6 +74,11 @@ public class StatChanger : MonoBehaviour {
         healthPlusButton.transform.SetParent(healthImage.transform, false);
         healthMinusButton.transform.SetParent(healthImage.transform, false);
 
+        creditPlusButton = Instantiate(creditPlusButtonPrefab);
+        creditMinusButton = Instantiate(creditMinusButtonPrefab);
+        creditPlusButton.transform.SetParent(creditImage.transform, false);
+        creditMinusButton.transform.SetParent(creditImage.transform, false);
+
         strPlusButton.onClick.AddListener(() => stats.strength++);
         strMinusButton.onClick.AddListener(() => stats.strength--);
 
@@ -75,6 +87,9 @@ public class StatChanger : MonoBehaviour {
 
         healthPlusButton.onClick.AddListener(() => stats.health++);
         healthMinusButton.onClick.AddListener(() => stats.health--);
+
+        creditPlusButton.onClick.AddListener(() => stats.credits++);
+        creditMinusButton.onClick.AddListener(() => stats.credits--);
     }
 
     void DeleteButtons()
@@ -85,5 +100,7 @@ public class StatChanger : MonoBehaviour {
         Destroy(armorMinusButton);
         Destroy(healthPlusButton);
         Destroy(healthMinusButton);
+        Destroy(creditPlusButton);
+        Destroy(creditMinusButton);
     }
 }

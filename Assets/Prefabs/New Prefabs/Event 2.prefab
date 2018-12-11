@@ -179,11 +179,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad35cec0f69d89e47abaee0f9ffda7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activePlayer: {fileID: 0}
   winButton: {fileID: 114844897870651800}
   loseButton: {fileID: 114034570386653430}
   fleeButton: {fileID: 114924272128770742}
   eventTitleText: {fileID: 114678292053808558}
   treasureResultText: {fileID: 114217186449764266}
+  tier1:
+  - {fileID: 21300000, guid: 634eb3cdcb081354590d7c02bee7ce13, type: 3}
+  - {fileID: 21300000, guid: 64c819486d4d2b449817e495e253d159, type: 3}
+  - {fileID: 21300000, guid: c93a84cbc23c40048b7cbe95cc568ad0, type: 3}
+  - {fileID: 21300000, guid: c12321d27aed91d489089dac90176eec, type: 3}
+  - {fileID: 21300000, guid: a65a1dcae704cf744b19266c4fb2cb9a, type: 3}
+  tier2:
+  - {fileID: 21300000, guid: 1503518de6d0e6e43965fc5a6f4b9c4d, type: 3}
+  - {fileID: 21300000, guid: 321c0efb579ba834db0269b8c805b912, type: 3}
+  - {fileID: 21300000, guid: e36355680428dc24fac28003f372262d, type: 3}
+  - {fileID: 21300000, guid: 16db3af313714164a80e579883c8719b, type: 3}
+  - {fileID: 21300000, guid: 777847d8b31d62048af14de2b09e7d62, type: 3}
+  tier3:
+  - {fileID: 21300000, guid: 5ac82104be963a6489b35496bd31d6eb, type: 3}
+  - {fileID: 21300000, guid: e3b06c4b8b668684da6b01f1ed870731, type: 3}
+  - {fileID: 21300000, guid: 0b8b09e2fb676fa419427e1c212512ba, type: 3}
+  - {fileID: 21300000, guid: 51cbd64234b164944bab391bbfd741f6, type: 3}
+  - {fileID: 21300000, guid: 645dc2b628a0aa54c854b75b6a5887b9, type: 3}
+  tier4:
+  - {fileID: 21300000, guid: 47908ef2c8842af49b9942f1367e959e, type: 3}
+  - {fileID: 21300000, guid: f63d5f52b307fcd4294ecfa53c0aea28, type: 3}
+  - {fileID: 21300000, guid: cc725583c163e2d409ec6037a97af3ec, type: 3}
+  image: {fileID: 114677752804659670}
 --- !u!114 &114034570386653430
 MonoBehaviour:
   m_ObjectHideFlags: 1

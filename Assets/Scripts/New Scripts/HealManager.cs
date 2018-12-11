@@ -11,6 +11,9 @@ public class HealManager : MonoBehaviour
     public Button healButton;
     public GameObject activePlayerSlot;
 
+    public GameObject eventButton;
+    public GameObject pvpButton;
+
     private void Start()
     {
         healButton.onClick.AddListener(HealActivePlayer);
@@ -20,5 +23,9 @@ public class HealManager : MonoBehaviour
     {
         GameObject activePlayer = activePlayerSlot.GetComponent<StatChanger>().activePlayer;
         activePlayer.GetComponent<StatHandler>().HealToFull();
+
+        Destroy(eventButton.GetComponent<EventManager>().eventCard);
+        pvpButton.GetComponent<PvpManager>().pvpCard.SetActive(false);
+        pvpButton.GetComponent<PvpManager>().pvpCard.GetComponent<PvpHandler>().enabled = false;
     }
 }
